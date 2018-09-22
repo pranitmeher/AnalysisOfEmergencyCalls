@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 10 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     just_location
+Instances:    2772884
+Attributes:   2
+              lon
+              lat
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 26
+Within cluster sum of squared errors: 1024.5844275904828
+
+Initial starting points (random):
+
+Cluster 0: 39.2842,-76.613311
+Cluster 1: 39.370871,-76.649825
+Cluster 2: 39.346285,-76.609881
+Cluster 3: 39.299655,-76.610437
+Cluster 4: 39.281174,-76.649133
+Cluster 5: 39.28998,-76.608363
+Cluster 6: 39.36455,-76.587682
+Cluster 7: 39.290992,-76.568038
+Cluster 8: 39.278052,-76.566153
+Cluster 9: 39.299355,-76.573686
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2          3          4          5          6          7          8          9
+           (2772884.0) (184323.0)  (90624.0) (282548.0) (375214.0) (267672.0) (487010.0) (253589.0) (293237.0) (134974.0) (403693.0)
+====================================================================================================================================
+lon            39.3072    39.2741    39.3741    39.3409    39.3091    39.2871    39.2929    39.3515    39.2911    39.2378    39.3193
+lat           -76.6206   -76.6341    -76.668   -76.6753   -76.6479   -76.6721   -76.6123    -76.578   -76.5663   -76.6078   -76.5863
+
+
+
+
+Time taken to build model (full training data) : 114.77 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+ 0       184323 (  7%)
+ 1        90624 (  3%)
+ 2       282548 ( 10%)
+ 3       375214 ( 14%)
+ 4       267672 ( 10%)
+ 5       487010 ( 18%)
+ 6       253589 (  9%)
+ 7       293237 ( 11%)
+ 8       134974 (  5%)
+ 9       403693 ( 15%)
+
